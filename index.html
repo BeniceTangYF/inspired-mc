@@ -1,0 +1,239 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Inspired by MC</title>
+    <style type="text/tailwindcss">
+
+       @font-face {
+            font-family: SanTC;
+            src: url(https://fonts.adobe.com/fonts/source-han-sans-tc-pan-cjk-traditional-chinese-variable?vf-instance=Medium&vf-font-size=100&vf-font=SourceHanSansTCVF-ExtraLight);
+        }
+        @font-face {
+            font-family:Montserrat ;
+            src: url(https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap);
+        }
+        :root {
+            --my-list-style: '1 X  ';
+        }
+            *{
+                /* outline: 0.5px solid blue; */
+                font-family: SanTC, sans-serif, Montserrat;
+                font-weight: medium;
+            }
+        .btn-primary,
+        ul,
+        p{
+            font-size: .925em;
+            line-height: 1.8;
+            color: var(--color-gray-500);
+        }
+        .btn-primary {
+            background-color: #ee3124;
+            padding: 5px 0;
+            width: 100%;
+            border-radius:2px;
+            color: white;
+            margin-top: 1em;
+            letter-spacing: 1px;
+        }
+        h2{
+            color: #262626;
+            font-size:1.5em;
+            line-height:3em;
+            margin-bottom:1em;
+            font-weight: 700;
+            letter-spacing: 1px;
+
+        }
+        .info-box h2::after,
+        h1::after{
+            border:1px solid #949494;
+            content:"";
+            display:block;
+            width:1.5em;
+            margin:20px auto 0;
+        }
+        .info-box img{
+            width: 60%;
+            margin: 2em auto;
+        }
+        .info-box h2::after{
+            margin: 0;
+        }
+        span{
+            color: #ee3124;
+            font-weight: 700;
+        
+        }
+        @media screen and (max-width: 768px) {
+            .btn-primary,
+            ul,
+            p{
+                font-size: 1.25em;
+           }
+           h2{
+                font-size:2em;
+                line-height:3.5em;
+            }
+            .info-box h2::after{
+                margin: 0 auto;
+            }
+        }
+    
+
+    </style>
+  </head>
+<body class="border-t-8 text-[#ee3124]">
+    
+    <header class="text-left md:text-center w-full xl:w-9/12 mx-auto">
+       <!-- head banner    -->
+
+        <div class=" pt-16 px-5 mb-10 md:px-10 lg:px-50 xl:px-50">
+            <h1 class="text-4xl font-medium text-[#ee3124] mb-10 tracking-[0em] lg:tracking-[.2em] text-center">自願單身男大生MC</h1>
+            <p>大學 Year 2 嘅 MC 公認好仔一名，高大得嚟又識打扮；被告白次數並唔少，當中仲有男有女，但偏偏單身足 21 年…點解？佢太鍾意自由囉。「自己一個人不知幾好？想做乜都得，完全唔使同人交代。」見到身邊兄弟成日要陪女朋友，無時間打機、踢波，MC 就更慶幸自己無拖拍：「我單身，我開心！」</p>   
+        </div>
+        <div class="px-4 md:px4">
+            <img class="w-full hidden md:block" src="src/images/01.jpg" alt="">
+            <img class="height-full w-auto md:hidden" src="src/images/01-mobile.jpg" alt="">
+          
+        </div>
+
+    </header>
+
+    <main class="px-4 pt-16 w-full xl:w-9/12 mx-auto">
+
+        <!--  MC 私房 好物推薦  -->
+        <div class="mt-10 md:mt-50 md:mb-20">
+            <div class="flex flex-col">
+                <div class="flex-row text-center md:pl-20 md:text-left">
+                    <strong class="text-5xl tracking-[.05em] font-medium mb-0 text-[#262626]">MC 私房</strong>
+                    <h3 class="text-[1.25em] mt-2 font-medium text-[#262626]">好物推薦</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-40 md:mt-0 flex flex-col md:flex-row">
+            <div class="basis-3/5 relative">
+                <img class="w-[70%] md:w-full" src="src/images/03.jpg" alt="">
+                <img class="absolute z-10 right-0 md:-right-[60%] -top-30 md:-top-80 w-[60%] md:w-[70%]" src="src/images/02.jpg" alt="">
+            </div>
+            <div class="basis-2/5 flex flex-col justify-end">        
+                <div class="info-box -mb-30 px-2 lg:px-[5em]">
+                    <img src="src/images/04.jpg" alt="">
+                    <h2 class="text-center md:text-left">聞得到的好心情</h2>
+                    <p>
+                        「有人覺得香水係用嚟吸引異性，但對我嚟講，佢可以轉換心情。近來我就最鍾意 <span>Spectre Zale 固態古龍水</span> ，果香清新得嚟，帶少少草味，搽親心情全日都會好好，有時班兄弟都忍唔住讚我幾香𠻹呀（笑）。」
+                    </p>
+                    <button class="btn-primary">立即購買</button>
+                </div>
+            </div>     
+        </div>
+
+        <!-- 住 Hall 獨樂樂-->
+       
+        <div class="mt-55 md:mt-60 flex flex-col md:flex-row-reverse">
+            <div class="basis-3/5">
+                <img class="w-full" src="src/images/14.jpg" alt="">
+            </div>
+            <div class="basis-2/5">        
+                <div class="info-box mt-5 px-2 lg:px-[5em]">
+                    <img class="block md:hidden"  src="src/images/05.jpg" alt="">
+                    <h2 class="text-center md:text-left">住 Hall 獨樂樂</h2>
+                    <p>
+                        「Roommate 週末通常去晒拍拖，難得獨霸成間房，梗係要出動 <span> TENGA AIR-TECH 重複使用型真空杯標準型</span>享受下 Me Time。世界級吸力，試過真係返唔到轉頭。」
+                    </p>
+                    <button class="btn-primary">立即購買</button>
+                    <img class="hidden md:block"  src="src/images/05.jpg" alt="">
+                </div>
+            </div>     
+        </div>
+   
+
+        <!-- 無愛情但有滋潤 -->
+        <div class="mt-25">
+            <div class="flex flex-col md:flex-row">
+                <div class="basis-3/5 relative">
+                    <img class="w-[70%] md:w-full" src="src/images/06.jpg" alt="">
+                    <img class="absolute z-10 right-0 -bottom-20 w-[60%] md:-bottom-[40%] md:w-[70%] md:-right-[60%]" src="src/images/08.jpg" alt="">
+                </div>
+                <div class="basis-2/5">        
+                    <div class="info-box flex flex-col justify-start pt-5 px-2 lg:px-[5em] mt-20 md:mt-0" >
+                        <img src="src/images/07.jpg" alt="">
+                        <h2 class="text-center md:text-left">無愛情但有滋潤</h2>
+                        <p>
+                        「用 TENGA，一定要配埋 <span> TENGA HOLE LOTION REAL 水性潤滑劑 </span> — 質地唔會太杰，但 Feel 到好潤好滑，不過真實感方面…我未答到你住（笑）。」
+                        </p>
+                        <button class="btn-primary">立即購買</button>
+                    </div>
+                </div>     
+            </div>
+        </div>
+
+        <!-- 剃「刀」剃得型過人-->
+        <div class="mt-25 md:mt-100">
+            <div class="flex flex-col md:flex-row-reverse justify-center items-center">
+                <div class="basis-3/5">
+                    <img src="src/images/10.jpg" alt="">
+                </div>
+                <div class="basis-2/5">        
+                    <div class="info-box px-2 lg:px-[5em]">
+                        <img class="block md:hidden"  src="src/images/09.jpg" alt="">
+                        <h2 class="text-center md:text-left">剃「刀」剃得型過人</h2>
+                        <p>
+                        「以前成日覺得啲剃刀望落好老土，直至畀我遇到 <span> SUPPLY 合金單刃剃鬚刀 (經典磨沙)</span> — 外型簡約得嚟，無多餘設計，啱晒崇尚 Less is more 嘅我。」
+                        </p>
+                        <button class="btn-primary">立即購買</button>
+                        <img class="hidden md:block" src="src/images/09.jpg" alt="">
+                    </div>
+                </div>     
+            </div>
+        </div>
+
+        <!-- 一 Toy 兩味 -->
+        <div class="mt-25">
+            <div class="flex flex-col md:flex-row justify-center  items-center">
+                <div class="basis-3/5">
+                    <img src="src/images/11.jpg" alt="">
+                </div>
+                <div class="basis-2/5">        
+                    <div class="info-box flex flex-col justify-center mt-0 px-2 lg:px-[5em]" >
+                        <img src="src/images/12.jpg" alt="">
+                        <h2 class="text-center md:text-left">一 Toy 兩味</h2>
+                        <p>
+                        「完全無諗過 TENGA 會同鐵甲萬能俠 Crossover，齋聽已經心動，見到實物直情馬上決定入手。呢個 <span> TENGA ROBO 鐵甲萬能俠</span> 唔只有玩味，仲趣味十足識變形，啲童年回憶即刻返晒嚟。」
+                        </p>
+                        <button class="btn-primary">立即購買</button>
+                    </div>
+                </div>     
+            </div>
+        </div>
+
+    </main>
+
+    <!-- MC 私房套裝 -->
+    <footer class="mt-25 mb-20 md:px-0 bg-white md:bg-[#e5e5e5] ">
+        <div class="w-full px-4  xl:w-9/12 mx-auto flex flex-col md:flex-row justify-center items-center">
+                <div class="basis-3/5 pt-8 md:pt-0 px-2 md:px-0 md:pb-0 bg-[#e5e5e5] h-[480px] overflow-hidden" >
+                    <img class="mt-0 lg:-mt-[3%]" src="src/images/13.png" alt="">
+                </div>
+                <div class="w-full basis-2/5 bg-white md:bg-[#e5e5e5]">        
+                    <div class="info-box px-0 px-2 lg:px-[5em]" >
+                        <h2 class="text-center md:text-left">MC 私房套裝</h2>
+                        <ul class="leading-5 m-0 pl-10 list-[var(--my-list-style)]">
+                            <li>TENGA ROBO 鐵甲萬能俠</li>
+                            <li>Spectre Zale 固態古龍水</li>
+                            <li>SUPPLY 合金單刃剃鬚刀 (經典磨沙)</li>
+                            <li>TENGA AIR-TECH 重複使用型真空杯 標準型</li>
+                            <li>TENGA HOLE LOTION REAL 水性潤滑劑</li>
+                        </ul>
+                        <button class="btn-primary">立即購買</button>
+                    </div>
+                </div>     
+            </div>
+    </footer>
+
+</body>
+</html>
